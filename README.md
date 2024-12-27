@@ -1,15 +1,15 @@
 # K-means and Bisective K-Means for clustering
 
-Ce projet implémente deux algorithmes de clustering : K-Means et Bisective K-Means.
+This project implements two clustering algorithms: K-Means and Bisective K-Means.
 
 ## K-Means
 
-L'algorithme K-Means partitionne un ensemble de données en `k` clusters. Il fonctionne en répétant les étapes suivantes jusqu'à convergence :
+The K-Means algorithm partitions a dataset into `k` clusters. It operates by repeating the following steps until convergence:
 
-1. Initialisation des centres de clusters.
-2. Attribution de chaque point de données au centre de cluster le plus proche.
-3. Mise à jour des centres de clusters en calculant la moyenne des points de données attribués à chaque cluster.
+1. Initialize cluster centers.
+2. Assign each data point to the nearest cluster center.
+3. Update cluster centers by calculating the mean of the data points assigned to each cluster.
 
 ## Bisective K-Means
 
-L'algorithme Bisective K-Means est une variante de K-Means qui fonctionne de manière hiérarchique. Il commence avec un seul cluster contenant toutes les données, puis il divise récursivement les clusters jusqu'à obtenir `k` clusters. À chaque étape, le cluster avec la plus grande distance paire maximale est sélectionné pour être divisé en deux sous-clusters en utilisant l'algorithme K-Means.
+The Bisective K-Means algorithm is a hierarchical variant of K-Means. It starts with a single cluster containing all data, then recursively divides clusters until `k` clusters are obtained. At each step, the cluster with the largest maximum pairwise distance is selected to be split into two sub-clusters using the K-Means algorithm.
